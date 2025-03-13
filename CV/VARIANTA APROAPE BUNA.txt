@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Europass - Safta Alessandra</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <img src="pozamea.jpg" alt="Fotografie de profil pentru Safta Alessandra" width="150">
+            </td>
+            <td>
+                <h2>Safta Alessandra</h2>
+                <p><strong>Data nașterii:</strong> 09/12/2004</p>
+                <hr>
+                <p><strong>Telefon:</strong> +40 734 017 769</p>
+                <hr>
+                <p><strong>Email:</strong> <a href="mailto:saftaalessandra92@gmail.com">saftaalessandra92@gmail.com</a></p>
+                <hr>
+                <p><strong>Adresă:</strong> Strada 13 Decembrie, Făgăraș, Brașov</p>
+            </td>
+        </tr>
+    </table>
+    
+    <h2>Despre Mine</h2>
+    <p>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <p>Sunt o persoană creativă, perseverentă și devotată, mereu dornică să învăț și să îmi îmbunătățesc abilitățile, încurajându-i pe cei din jur, având o atitudine prietenoasă și serioasă, implicată, receptivă la informații noi și capabilă să le integrez rapid în activitatea mea profesională.</p>
+    <p>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    
+    <h2>Educație și Formare Profesională</h2>
+    <p>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <table>
+        <tr>
+            <th colspan="2">Educație și Formare</th>
+        </tr>
+        <tr>
+            <td rowspan="2">2019-2023</td>
+            <td>Liceul Colegiul Național Radu Negru Făgăraș <a href="http://www.radunegru.ro/">www.radunegru.ro</a></td>
+        </tr>
+        <tr>
+            <td>Diplomă de Bacalaureat - Competențe Digitale</td>
+        </tr>
+        <tr>
+            <td rowspan="2">2023 - 2025</td>
+            <td>Universitatea Lucian Blaga Sibiu <a href="http://csac.ulbsibiu.ro/">www.csac.ulbsibiu.ro</a></td>
+        </tr>
+        <tr>
+            <td>Specializare: Ingineria Sistemelor Multimedia</td>
+        </tr>
+    </table>
+    <p>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    
+    <h2>Competențe</h2>
+    <p>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <table>
+        <tr>
+            <th>Competențe Digitale</th>
+            <th>Voluntariat</th>
+            <th>Activități</th>
+        </tr>
+        <tr>
+            <td>
+                Microsoft Office (Word, PowerPoint), Social Media, Navigare Internet, 
+                Management site-uri web, Sisteme de operare, Procesare date
+            </td>
+            <td>
+                <strong>08/03/2024 – 12/03/2024</strong><br>
+                UEC Mountain Bike European Championship, Cheile Grădiștei, România.<br>
+                Am ajutat la realizarea traseului și la echipament, amenajarea locului.
+            </td>
+            <td>
+                WENGLOR - Participare și realizarea unui senzor de ploaie fotonsensibil la picăturile de apă 
+                pe o suprafață de sticlă (include realizarea Hardware și Software). Include o diplomă 
+                pentru participare și premiul acordat.
+            </td>
+        </tr>
+    </table>
+    <p>--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    
+    <h2>Competențe Lingvistice</h2>
+    <p>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <table>
+        <tr>
+            <th>Limbă</th>
+            <th>Înțelegere Orală</th>
+            <th>Citit</th>
+            <th>Scris</th>
+            <th>Exprimare Scrisă</th>
+            <th>Conversație</th>
+        </tr>
+        <tr>
+            <td>Engleză</td>
+            <td>B2</td>
+            <td>B2</td>
+            <td>B2</td>
+            <td>B2</td>
+            <td>B2</td>
+        </tr>
+        <tr>
+            <td>Română</td>
+            <td>Limba maternă</td>
+            <td>Limba maternă</td>
+            <td>Limba maternă</td>
+            <td>Limba maternă</td>
+            <td>Limba maternă</td>
+        </tr>
+        <tr>
+            <td>Italiană</td>
+            <td>Limba maternă secundară</td>
+            <td>Limba maternă secundară</td>
+            <td>Limba maternă secundară</td>
+            <td>Limba maternă secundară</td>
+            <td>Limba maternă secundară</td>
+        </tr>
+    </table>
+    <p>-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+</body>
+</html>
