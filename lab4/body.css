@@ -1,0 +1,528 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header styles */
+.header {
+  background-color: #000;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo__image {
+  height: 40px;
+  width: auto;
+}
+
+.header__nav {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.nav__wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav__item {
+  position: relative;
+  text-align: center;
+}
+
+/* Add dividing lines between navigation items */
+.nav__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 20%;
+  height: 60%;
+  width: 1px;
+  background-color: #333;
+}
+
+.nav__link {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 28px 30px;
+  display: block;
+  text-align: center;
+}
+
+.nav__link:hover,
+.nav__link--active {
+  color: #0dcaf0;
+}
+
+/* Search icon */
+.search-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.fa-magnifying-glass {
+  font-size: 20px;
+  color: white;
+}
+
+/* Offer button */
+.offer-button {
+  background-color: #0dcaf0;
+  padding: 8px 20px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 20px;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+
+.offer-button:hover {
+  background-color: #09a7c7;
+}
+
+/* Hero section */
+.hero {
+  height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("pozafundal.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.hero__wrapper {
+  padding: 20px;
+  max-width: 800px;
+}
+
+.hero__title {
+  font-size: 48px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.hero__subtitle {
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* Main content */
+.main {
+  padding-top: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Article content */
+.article__wrapper {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.content__title {
+  margin: 30px 0 20px;
+  font-size: 28px;
+  text-align: center; /* Center align the title */
+}
+
+.content p {
+  margin-bottom: 20px;
+  color: #666;
+  line-height: 1.8;
+}
+
+.content__quote {
+  border-left: 4px solid #0dcaf0;
+  padding: 20px;
+  margin: 30px 0;
+  background-color: #f9f9f9;
+  font-style: italic;
+  position: relative;
+}
+
+/* CITAT cu ghilimele  */
+.content__quote {
+  position: relative;
+  padding: 20px 20px 20px 80px;
+  margin: 30px 0;
+  font-style: italic;
+  border: none;
+  background-color: transparent;
+}
+
+/* Large quotation mark */
+.content__quote::before {
+  content: '"';
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 120px;
+  line-height: 1;
+  font-family: Georgia, serif;
+  color: #000;
+  opacity: 0.8;
+}
+
+/* Quote text */
+.content__quote {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Author styling */
+.quote__author {
+  display: block;
+  margin-top: 15px;
+  font-style: normal;
+  font-weight: normal;
+  color: #999;
+  font-size: 16px;
+}
+
+/* Add proper spacing between quote text and author */
+.content__quote > .quote__author {
+  margin-top: 20px;
+}
+.content__image {
+  width: 100%;
+  margin: 30px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Related articles */
+.related {
+  background-color: #f7f7f7;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.related__title {
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.related__wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.related__item {
+  width: 30%;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+  margin: 0 10px;
+}
+
+.related__item:hover {
+  transform: translateY(-5px);
+}
+
+.item {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.related__item:nth-child(1) {
+  background-image: url("https://source.unsplash.com/random/300x200/?cycling,race");
+}
+
+.related__item:nth-child(2) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+}
+
+.related__item:nth-child(3) {
+  background-image: url("https://source.unsplash.com/random/300x200/?bicycle,parts");
+}
+
+.item__title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #0dcaf0;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0aa8c9;
+}
+
+/* Social links */
+.social {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.social__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.social__item {
+  margin: 0 7.5px;
+}
+
+.social__link {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.social__link:hover {
+  background-color: #f7f7f7;
+}
+
+/* Footer */
+.footer {
+  background-color: #000;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer__menu {
+  margin-bottom: 30px;
+}
+
+.menu__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.menu__item {
+  margin: 0 7.5px;
+}
+
+.menu__link {
+  padding: 5px 10px;
+  color: #ccc;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.menu__link:hover,
+.menu__link--active {
+  color: #0dcaf0;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer__logo img {
+  height: 40px;
+  width: auto;
+}
+
+.footer__copyright {
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* About section */
+.about {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.about h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.about p {
+  color: #ccc;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.icons {
+  margin: 20px 0;
+}
+
+.fa {
+  margin: 0 10px;
+  font-size: 20px;
+  color: #ccc;
+}
+
+.fa-heart-o {
+  color: #ff4d4d;
+  margin: 0 5px;
+}
+
+/* Additional styling for responsive design */
+@media (max-width: 768px) {
+  .nav__wrapper {
+    flex-direction: column;
+  }
+
+  .related__wrapper {
+    flex-direction: column;
+  }
+
+  .related__item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Styling for the link example */
+.link-example {
+  color: #0dcaf0;
+  text-decoration: underline;
+}
+
+/* Make sure the images in the related section have 3D effect */
+.related__item {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.related__item:hover {
+  transform: rotateY(5deg) translateY(-5px);
+  box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+/* Social media section styling */
+/* Social media section styling */
+.social {
+  padding: 40px 0;
+  text-align: center;
+  background-color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  gap: 120px; /* Space between social text and buttons */
+}
+
+/* Left side - social network names */
+.social-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.social-text span {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.4;
+  color: #000;
+}
+
+/* Right side - buttons */
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.like-share-box {
+  display: flex;
+  align-items: center;
+}
+
+.like-button,
+.share-button {
+  background-color: #4267b2; /* Facebook blue */
+  color: white;
+  padding: 2px 8px;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.share-button {
+  background-color: #5890ff; /* Lighter blue for Share */
+}
+
+.like-text {
+  font-size: 13px;
+  color: #666;
+  margin-left: 5px;
+}
